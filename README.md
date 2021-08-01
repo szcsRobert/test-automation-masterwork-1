@@ -1,5 +1,6 @@
 # test-automation-masterwork
-- Választott alkalmazás: [Prestashop](http://test-automation-shop1.greenfox.academy/)
-- Manuális tesztesetek leírása: [Google spreadsheets](https://docs.google.com/spreadsheets/d/1nBHmpjwrm3Y0BgLo0KCiwkfmxf9QJfh-4_EfECCqcEE/edit?usp=sharing)
-- Automata tesztek futtatásának módja:
-- Teszt report elérhetősége:
+- Chosen web application: [Prestashop](http://test-automation-shop1.greenfox.academy/)
+- Manual test cases: [Google spreadsheets](https://docs.google.com/spreadsheets/d/1nBHmpjwrm3Y0BgLo0KCiwkfmxf9QJfh-4_EfECCqcEE/edit?usp=sharing)
+- Method of automated test running: clone repository -> use `gradlew test` in terminal
+- Test Management Report: use `allure serve allure-results` in terminal
+
