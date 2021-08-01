@@ -42,13 +42,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTest">
-    <configuration name="LoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'masterwork.test'">
+    <configuration name="LoginTest.loginSuccessful" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;LoginTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;LoginTest.loginSuccessful&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -64,33 +64,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PaginationTest.paginationSuccessful" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegisterAddressTest.registrationAddressSuccessful" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;PaginationTest.paginationSuccessful&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RegistrationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;RegisterAddressTest.registrationAddressSuccessful&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -112,6 +91,27 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;RegistrationTest.registrationSuccessful&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SignOutTest.signOutSuccessful" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;SignOutTest.signOutSuccessful&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegistrationTest" />
-        <item itemvalue="Gradle.LoginTest" />
         <item itemvalue="Gradle.Tests in 'masterwork.test'" />
         <item itemvalue="Gradle.RegistrationTest.registrationSuccessful" />
-        <item itemvalue="Gradle.PaginationTest.paginationSuccessful" />
+        <item itemvalue="Gradle.RegisterAddressTest.registrationAddressSuccessful" />
+        <item itemvalue="Gradle.LoginTest.loginSuccessful" />
+        <item itemvalue="Gradle.SignOutTest.signOutSuccessful" />
       </list>
     </recent_temporary>
   </component>

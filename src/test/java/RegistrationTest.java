@@ -8,14 +8,14 @@ import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 public class RegistrationTest extends BaseTest {
 
   @Test
-  public void registrationSuccessful() {
+  public void registrationSuccessful(){
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     CreateAccountPage createAccountPage = PageFactory.initElements(driver, CreateAccountPage.class);
     boardingPage.getSignInLink().click();
     assertThat(loginPage.isLoaded()).isTrue();
     loginPage.getRegistrationLink().click();
     assertThat(createAccountPage.isLoaded()).isTrue();
-    createAccountPage.createAnAccount("Sikeres", "Teszt", "sikeresteszt+30@gmail.com", "test1234");
+    createAccountPage.createAnAccount("Sikeres", "Teszt", "sikeresteszt+33@gmail.com", "test1234");
     assertThat(boardingPage.getAccount().getText()).isEqualTo("Sikeres Teszt");
     boardingPage.getSignOutLink().click();
   }

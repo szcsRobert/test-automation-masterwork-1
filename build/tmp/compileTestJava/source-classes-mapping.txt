@@ -1,26 +1,42 @@
 Pages/AccessoriesPage.java
  Pages.AccessoriesPage
-Pages/BoardingPage.java
- Pages.BoardingPage
-Pages/TermsAndConditionsOfUsePage.java
- Pages.TermsAndConditionsOfUsePage
-Pages/MyAccountPage.java
- Pages.MyAccountPage
-Pages/HomePage.java
- Pages.HomePage
-BaseTest.java
- BaseTest
-Pages/LoginPage.java
- Pages.LoginPage
 Pages/CreateAccountPage.java
  Pages.CreateAccountPage
+Pages/TermsAndConditionsOfUsePage.java
+ Pages.TermsAndConditionsOfUsePage
+Pages/ModalPage.java
+ Pages.ModalPage
+Pages/HomePage.java
+ Pages.HomePage
+Pages/ProductPage.java
+ Pages.ProductPage
+Pages/MyAccountPage.java
+ Pages.MyAccountPage
+Pages/LoginPage.java
+ Pages.LoginPage
+Pages/BoardingPage.java
+ Pages.BoardingPage
+Pages/AddressPage.java
+ Pages.AddressPage
 ListingTest.java
  ListingTest
 LoginTest.java
  LoginTest
+UpdateExistingDataTest.java
+ UpdateExistingDataTest
+InputNewDataTest.java
+ InputNewDataTest
+SignOutTest.java
+ SignOutTest
+RegisterAddressTest.java
+ RegisterAddressTest
+DeleteExistingDataTest.java
+ DeleteExistingDataTest
 TermsAndConditionsTest.java
  TermsAndConditionsTest
-RegistrationTest.java
- RegistrationTest
+BaseTest.java
+ BaseTest
 PaginationTest.java
  PaginationTest
+RegistrationTest.java
+ RegistrationTest

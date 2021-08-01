@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ListingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-01T21:56:40" hostname="TALA-GÉPE" time="6.759">
+  <properties/>
+  <testcase name="listingSuccessful()" classname="ListingTest" time="6.759"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 16774
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+aug. 01, 2021 11:56:40 DU. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
