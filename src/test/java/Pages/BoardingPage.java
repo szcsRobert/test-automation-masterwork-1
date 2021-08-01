@@ -23,6 +23,9 @@ public class BoardingPage {
   @FindBy(partialLinkText = "All products")
   WebElement allProductsLink;
 
+  @FindBy(xpath = "//a[contains(text(),'Hummingbird printed t-shirt')]")
+  WebElement firstProductLink;
+
   public BoardingPage(WebDriver driver) {
     this.driver = driver;
   }
@@ -58,5 +61,9 @@ public class BoardingPage {
 
   public WebElement getAllProductsLink() {
     return allProductsLink;
+  }
+
+  public WebElement getFirstProductLink() {
+    return firstProductLink;
   }
 }

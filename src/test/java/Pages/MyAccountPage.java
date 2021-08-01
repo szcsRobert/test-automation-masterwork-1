@@ -11,6 +11,9 @@ public class MyAccountPage {
   @FindBy(tagName = "h1")
   WebElement header;
 
+  @FindBy(id = "_desktop_logo")
+  WebElement myStoreLogo;
+
   public MyAccountPage(WebDriver driver) {
     this.driver = driver;
   }
@@ -25,5 +28,9 @@ public class MyAccountPage {
 
   public WebElement getHeader() {
     return header;
+  }
+
+  public WebElement getMyStoreLogo() {
+    return myStoreLogo;
   }
 }
