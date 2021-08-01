@@ -1,6 +1,5 @@
 import Pages.HomePage;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -10,7 +9,6 @@ public class PaginationTest extends BaseTest {
   @Test
   public void paginationSuccessful() {
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-    JavascriptExecutor js = (JavascriptExecutor) driver;
     js.executeScript("window.scrollBy(0,800)", boardingPage.getAllProductsLink());
     boardingPage.getAllProductsLink().click();
     assertThat(homePage.isLoaded()).isTrue();

@@ -4,6 +4,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.TestInstance;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -22,6 +23,7 @@ public class BaseTest {
   WebDriver driver;
   WebDriverWait wait;
   BoardingPage boardingPage;
+  JavascriptExecutor js;
 
   @BeforeAll
   public void setup() throws IOException {
@@ -43,6 +45,7 @@ public class BaseTest {
       this.driver = new EdgeDriver();
     }
     wait = new WebDriverWait(driver, 5);
+    js = (JavascriptExecutor) driver;
   }
 
   @BeforeEach
@@ -52,8 +55,8 @@ public class BaseTest {
     assertThat(boardingPage.isLoaded()).isTrue();
   }
 
-  @AfterAll
-  public void quitFromDriver() {
-    driver.quit();
-  }
+//  @AfterAll
+//  public void quitFromDriver() {
+//    driver.quit();
+//  }
 }

@@ -1,6 +1,5 @@
 import Pages.AccessoriesPage;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.*;
 
@@ -13,7 +12,6 @@ public class ListingTest extends BaseTest {
     boardingPage.getAccessoriesMenu().click();
     assertThat(accessoriesPage.isLoaded()).isTrue();
     assertThat(accessoriesPage.getHeader().getText()).isEqualTo("ACCESSORIES");
-    JavascriptExecutor js = (JavascriptExecutor) driver;
     js.executeScript("window.scrollBy(0,500)", accessoriesPage.getSortByDropdown());
     assertThat(accessoriesPage.getSortByDropdown().getText()).isEqualTo("Relevance\n" + "\uE5C5");
     assertThat(accessoriesPage.isPricesInAscendingOrder()).isFalse();
