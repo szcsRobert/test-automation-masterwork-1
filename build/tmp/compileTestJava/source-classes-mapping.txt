@@ -1,0 +1,26 @@
+Pages/AccessoriesPage.java
+ Pages.AccessoriesPage
+Pages/BoardingPage.java
+ Pages.BoardingPage
+Pages/TermsAndConditionsOfUsePage.java
+ Pages.TermsAndConditionsOfUsePage
+Pages/MyAccountPage.java
+ Pages.MyAccountPage
+Pages/HomePage.java
+ Pages.HomePage
+BaseTest.java
+ BaseTest
+Pages/LoginPage.java
+ Pages.LoginPage
+Pages/CreateAccountPage.java
+ Pages.CreateAccountPage
+ListingTest.java
+ ListingTest
+LoginTest.java
+ LoginTest
+TermsAndConditionsTest.java
+ TermsAndConditionsTest
+RegistrationTest.java
+ RegistrationTest
+PaginationTest.java
+ PaginationTest
