@@ -17,6 +17,9 @@ public class MyAccountPage {
   @FindBy(id = "identity-link")
   WebElement informationLink;
 
+  @FindBy(id = "address-link")
+  WebElement addressLink;
+
   public MyAccountPage(WebDriver driver) {
     this.driver = driver;
   }
@@ -39,5 +42,9 @@ public class MyAccountPage {
 
   public WebElement getInformationLink() {
     return informationLink;
+  }
+
+  public WebElement getAddressLink() {
+    return addressLink;
   }
 }

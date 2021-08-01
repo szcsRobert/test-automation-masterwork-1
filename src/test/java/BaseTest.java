@@ -55,8 +55,8 @@ public class BaseTest {
     assertThat(boardingPage.isLoaded()).isTrue();
   }
 
-//  @AfterAll
-//  public void quitFromDriver() {
-//    driver.quit();
-//  }
+  @AfterAll
+  public void quitFromDriver() {
+    driver.quit();
+  }
 }

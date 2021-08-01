@@ -15,7 +15,7 @@ public class RegistrationTest extends BaseTest {
     assertThat(loginPage.isLoaded()).isTrue();
     loginPage.getRegistrationLink().click();
     assertThat(createAccountPage.isLoaded()).isTrue();
-    createAccountPage.createAnAccount("Sikeres", "Teszt", "sikeresteszt+22@gmail.com", "test1234");
+    createAccountPage.createAnAccount("Sikeres", "Teszt", "sikeresteszt+24@gmail.com", "test1234");
     assertThat(boardingPage.getAccount().getText()).isEqualTo("Sikeres Teszt");
     boardingPage.getSignOutLink().click();
   }
