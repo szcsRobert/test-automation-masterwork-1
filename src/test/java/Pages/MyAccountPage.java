@@ -14,6 +14,9 @@ public class MyAccountPage {
   @FindBy(id = "_desktop_logo")
   WebElement myStoreLogo;
 
+  @FindBy(id = "identity-link")
+  WebElement informationLink;
+
   public MyAccountPage(WebDriver driver) {
     this.driver = driver;
   }
@@ -32,5 +35,9 @@ public class MyAccountPage {
 
   public WebElement getMyStoreLogo() {
     return myStoreLogo;
+  }
+
+  public WebElement getInformationLink() {
+    return informationLink;
   }
 }

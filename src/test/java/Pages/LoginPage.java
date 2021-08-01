@@ -9,7 +9,7 @@ public class LoginPage {
   WebDriver driver;
 
   @FindBy(name = "email")
-  WebElement emailFiled;
+  WebElement emailField;
 
   @FindBy(name = "password")
   WebElement passwordField;
@@ -36,13 +36,13 @@ public class LoginPage {
   }
 
   public void signIn(String email, String password){
-    getEmailFiled().sendKeys(email);
+    getEmailField().sendKeys(email);
     getPasswordField().sendKeys(password);
     getSubmitButton().click();
   }
 
-  public WebElement getEmailFiled() {
-    return emailFiled;
+  public WebElement getEmailField() {
+    return emailField;
   }
 
   public WebElement getPasswordField() {

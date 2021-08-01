@@ -32,6 +32,9 @@ public class CreateAccountPage {
   @FindBy(xpath = "//button[contains(text(),'Save')]")
   WebElement saveButton;
 
+  @FindBy(id = "notifications")
+  WebElement successfulUpdateMessage;
+
   public CreateAccountPage(WebDriver driver) {
     this.driver = driver;
   }
@@ -58,6 +61,15 @@ public class CreateAccountPage {
     getLastNameField().sendKeys(lastName);
     getEmailField().sendKeys(email);
     getPassword().sendKeys(password);
+    getCustomerPrivacyCheckbox().click();
+    getTermsAndConditionsCheckbox().click();
+    getSaveButton().click();
+  }
+
+  public void createAnAccount(String lastName){
+    getLastNameField().clear();
+    getLastNameField().sendKeys(lastName);
+    getPassword().sendKeys("test1234");
     getCustomerPrivacyCheckbox().click();
     getTermsAndConditionsCheckbox().click();
     getSaveButton().click();
@@ -93,5 +105,9 @@ public class CreateAccountPage {
 
   public WebElement getSaveButton() {
     return saveButton;
+  }
+
+  public WebElement getSuccessfulUpdateMessage() {
+    return successfulUpdateMessage;
   }
 }
