@@ -12,10 +12,16 @@ public class ExistingDataUpdateTest extends BaseTest {
     MyAccountPage myAccountPage = PageFactory.initElements(driver, MyAccountPage.class);
     CreateAccountPage createAccountPage = PageFactory.initElements(driver, CreateAccountPage.class);
     boardingPage.getSignInLink().click();
-    loginPage.signIn("sikeresteszt@gmail.com", "test1234");
+    loginPage.signIn("successful@gmail.com", "test1234");
     myAccountPage.getInformationLink().click();
-    assertThat(driver.findElement(By.name("email")).getAttribute("value")).isEqualTo("sikeresteszt@gmail.com");
+    assertThat(createAccountPage.getEmailField().getAttribute("value")).isEqualTo("successful@gmail.com");
+    assertThat(createAccountPage.getFirstNameField().getAttribute("value")).isEqualTo("Successful");
+    assertThat(createAccountPage.getLastNameField().getAttribute("value")).isEqualTo("Sarah");
     createAccountPage.createAnAccount("New");
     assertThat(createAccountPage.getSuccessfulUpdateMessage().getText()).isEqualTo("Information successfully updated.");
+    assertThat(boardingPage.getAccount().getText()).isEqualTo("Successful New");
+    createAccountPage.getLastNameField().clear();
+    createAccountPage.createAnAccount("Sarah");
+    boardingPage.getSignOutLink().click();
   }
 }

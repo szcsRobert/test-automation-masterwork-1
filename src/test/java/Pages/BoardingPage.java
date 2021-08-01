@@ -14,7 +14,7 @@ public class BoardingPage {
   @FindBy(partialLinkText = "Sign out")
   WebElement signOutLink;
 
-  @FindBy(xpath = "//span[contains(text(),'Sikeres Teszt')]")
+  @FindBy(className = "account")
   WebElement account;
 
   @FindBy(id = "category-6")
